@@ -2,21 +2,21 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable
-            name="goodsItem"
+            name="orderItem"
             type="com.stream.nakedrent.vo.OrderDetailVo"/>
     </data>
     <LinearLayout
-        android:id="@+id/news_item_layout"
+        android:id="@+id/order_item"
         android:paddingTop="@dimen/item_margin_top"
         android:paddingBottom="@dimen/item_margin_bottom"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/news_item_img"
+            android:id="@+id/order_url"
             android:layout_marginLeft="@dimen/img_margin_left"
             android:layout_marginRight="@dimen/img_margin_right"
-            android:src="@{goodsItem.url != null ? goodsItem.url : goodsItem.default_url}"
+            android:src="@{orderItem.url != null ? orderItem.url : orderItem.default_url}"
             android:background="@drawable/no_picture"
             android:layout_width="150dp"
             android:layout_height="125dp"/>
@@ -26,29 +26,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:id="@+id/goods_item_describe"
+                android:id="@+id/order_goods_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:textColor="@color/black"
                 android:maxLines="1"
-                android:text="@{goodsItem.name}"/>
+                android:text="@{orderItem.name}"/>
             <TextView
-                android:id="@+id/goods_item_rent"
+                android:id="@+id/order_goods_rent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:textColor="@color/black"
                 android:maxLines="1"
-                android:text="@{goodsItem.count}"/>
+                android:text="@{orderItem.count}"/>
             <TextView
-                android:id="@+id/goods_item_count"
+                android:id="@+id/order_goods_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:textColor="@color/black"
                 android:maxLines="1"
-                android:text="@{goodsItem.time}"/>
+                android:text="@{orderItem.time}"/>
         </LinearLayout>
     </LinearLayout>
 
