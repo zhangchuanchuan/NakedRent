@@ -44,6 +44,7 @@ public class LaunchActivity extends BaseActivity {
     private void jumpToMainActivity(){
         Intent mainIntent = new Intent();
         mainIntent.setClass(this, MainActivity.class);
+        startActivity(mainIntent);
         finish();
     }
 
