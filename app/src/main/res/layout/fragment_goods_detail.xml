@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--headbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_bar_height">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/arrow_height"
+            android:src="@drawable/ic_left"/>
+        <TextView
+            android:id="@+id/news_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16dp"
+            android:textColor="@color/text_hard_gray_color"
+            android:maxLines="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_gray"/>
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_describe"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                style="@style/text_black_22dp"
+                android:layout_marginLeft="@dimen/head_bar_height"
+                android:layout_marginRight="@dimen/head_bar_height"
+                android:text="这个电脑特别好啊"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/goods_img"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/no_picture"
+            android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/goods_detail"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                style="@style/text_black_22dp"
+                android:layout_marginLeft="@dimen/head_bar_height"
+                android:layout_marginRight="@dimen/head_bar_height"
+                android:text="这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字这个电脑特别好啊,内存大，测试文字"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="10dp"
+                          android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:padding="2dp"
+                          android:text="2000元*1期"
+                          android:layout_gravity="center"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:padding="2dp"
+                          android:layout_weight="1"
+                          android:text="1000元*2期"
+                          android:layout_gravity="center"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:padding="2dp"
+                          android:gravity="center"
+                          android:text="2000元*4期"
+                          android:layout_gravity="center"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:padding="2dp"
+                          android:gravity="center"
+                          android:text="200元*9期"
+                          android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="@dimen/detail_bar_height">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"
+                      android:text="数量：10"/>
+
+            <TextView
+                android:id="@+id/button_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_color"
+                android:padding="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                style="@style/text_white_28px"
+                android:text="立刻租赁"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

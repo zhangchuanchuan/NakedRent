@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import com.stream.nakedrent.R;
 import com.stream.nakedrent.databinding.ItemGoodsBinding;
+import com.stream.nakedrent.fragment.GoodsDetailFragment;
 import com.stream.nakedrent.vo.GoodsDetailVo;
-
 
 import java.util.List;
 
@@ -42,9 +42,16 @@ public class GoodsItemAdapter extends RecyclerView.Adapter<GoodsItemAdapter.Good
     }
 
     @Override
-    public void onBindViewHolder(GoodsItemViewHolder holder, int position) {
+    public void onBindViewHolder(GoodsItemViewHolder holder, final int position) {
         ItemGoodsBinding itemGoodsBinding = DataBindingUtil.bind(holder.view);
         itemGoodsBinding.setGoodsItem(mDataList.get(position));
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                GoodsDetailFragment.jumpToGoodsDetailActivity(mContext, mDataList.get(position));
+            }
+        });
     }
 
     @Override

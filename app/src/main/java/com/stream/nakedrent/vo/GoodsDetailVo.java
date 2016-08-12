@@ -1,5 +1,7 @@
 package com.stream.nakedrent.vo;
 
+import java.io.Serializable;
+
 /**
  * description：
  * ===============================
@@ -10,7 +12,7 @@ package com.stream.nakedrent.vo;
  * Modifier：
  * Modify time：
  */
-public class GoodsDetailVo {
+public class GoodsDetailVo implements Serializable{
     private String id;
     private String goodValue;
     private String description="ThinkPad T410 这是一台特别好用的电脑，硬盘也特别大。内存也大。总之特别好！";

@@ -3,13 +3,14 @@
     <data>
         <variable
             name="goodsItem"
-            type="com.stream.nakedrent.vo.GoodsDetailVo"/>
+            type="com.stream.nakedrent.vo.OrderDetailVo"/>
     </data>
     <LinearLayout
         android:id="@+id/news_item_layout"
         android:paddingTop="@dimen/item_margin_top"
         android:paddingBottom="@dimen/item_margin_bottom"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/news_item_img"
@@ -19,7 +20,7 @@
             android:background="@drawable/no_picture"
             android:layout_width="150dp"
             android:layout_height="125dp"/>
-        <RelativeLayout
+        <LinearLayout
             android:orientation="vertical"
             android:layout_marginRight="@dimen/item_margin_right"
             android:layout_width="match_parent"
@@ -30,26 +31,25 @@
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:textColor="@color/black"
-                android:maxLines="3"
-                android:text="@{goodsItem.description}"/>
+                android:maxLines="1"
+                android:text="@{goodsItem.name}"/>
             <TextView
                 android:id="@+id/goods_item_rent"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="@dimen/digest_margin_top"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="@dimen/digest_text_line_space"
-                android:text="@{goodsItem.price}"/>
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:text="@{goodsItem.count}"/>
             <TextView
                 android:id="@+id/goods_item_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="@dimen/digest_margin_top"
-                android:layout_alignParentRight="true"
-                android:textSize="@dimen/item_source_text_size"
-                android:text="@{goodsItem.stock}"/>
-        </RelativeLayout>
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:text="@{goodsItem.time}"/>
+        </LinearLayout>
     </LinearLayout>
 
 

@@ -1,6 +1,11 @@
 package com.stream.nakedrent.activity;
 
 import android.app.Activity;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
+
+import com.stream.nakedrent.fragment.GoodsDetailFragment;
 
 /**
  * description：
@@ -13,4 +18,9 @@ import android.app.Activity;
  * Modify time：
  */
 public class GoodsDetailActivity extends BaseActivity {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getSupportFragmentManager().beginTransaction().add(android.R.id.content, new GoodsDetailFragment()).commit();
+    }
 }
