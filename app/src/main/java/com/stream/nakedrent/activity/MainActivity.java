@@ -26,8 +26,8 @@ public class MainActivity extends BaseActivity {
         if(savedInstanceState == null){
             MainFragment mainFragment = new MainFragment();
             MainTabFragment mainTabFragment = new MainTabFragment();
-            getFragmentManager().beginTransaction().add(android.R.id.content, mainFragment).commit();
-            getFragmentManager().beginTransaction().add(android.R.id.content, mainTabFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(android.R.id.content, mainFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(android.R.id.content, mainTabFragment).commit();
         }
     }
 

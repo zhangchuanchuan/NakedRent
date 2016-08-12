@@ -24,7 +24,7 @@ import de.greenrobot.event.EventBus;
  * Modifier：
  * Modify time：
  */
-public class MainTabFragment extends Fragment implements View.OnClickListener{
+public class MainTabFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
 
     private TextView homeTab;
     private TextView orderTab;

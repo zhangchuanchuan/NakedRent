@@ -7,6 +7,8 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.stream.nakedrent.utils.AppUtils;
 import com.yolanda.nohttp.NoHttp;
 
+import de.greenrobot.event.EventBus;
+
 /**
  * description：
  * ===============================

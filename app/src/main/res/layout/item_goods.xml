@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="goodsItem"
+            type="com.stream.nakedrent.vo.GoodsDetailVo"/>
+    </data>
+    <LinearLayout
+        android:id="@+id/news_item_layout"
+        android:paddingTop="@dimen/item_margin_top"
+        android:paddingBottom="@dimen/item_margin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/news_item_img"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
+            android:src="@{goodsItem.url != null ? goodsItem.url : goodsItem.default_url}"
+            android:background="@drawable/no_picture"
+            android:layout_width="150dp"
+            android:layout_height="125dp"/>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/item_margin_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/goods_item_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:text="@{goodsItem.description}"/>
+            <TextView
+                android:id="@+id/goods_item_rent"
+                android:layout_below="@id/goods_item_describe"
+                android:layout_marginTop="@dimen/digest_margin_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/digest_text_line_space"
+                android:text="@{goodsItem.price}"/>
+            <TextView
+                android:id="@+id/goods_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/item_source_text_size"
+                android:text="@{goodsItem.stock}"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</layout>

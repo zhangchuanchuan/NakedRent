@@ -1,7 +1,5 @@
 package com.stream.nakedrent.fragment;
 
-import android.app.Fragment;
-
 /**
  * description：
  * ===============================
@@ -12,5 +10,5 @@ import android.app.Fragment;
  * Modifier：
  * Modify time：
  */
-public class MyFragment extends Fragment {
+public class MyFragment extends android.support.v4.app.Fragment {
 }

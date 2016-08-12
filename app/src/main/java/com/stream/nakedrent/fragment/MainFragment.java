@@ -1,8 +1,8 @@
 package com.stream.nakedrent.fragment;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +22,7 @@ import de.greenrobot.event.EventBus;
  * Modifier：
  * Modify time：
  */
-public class MainFragment extends Fragment {
+public class MainFragment extends android.support.v4.app.Fragment {
 
 
     private Fragment mCurrentFragment;
@@ -111,6 +111,8 @@ public class MainFragment extends Fragment {
         }else{
             getFragmentManager().beginTransaction().hide(mCurrentFragment).add(R.id.main_fragment, fragment).commit();
         }
+
+        mCurrentFragment = fragment;
 
     }
 }
