@@ -12,5 +12,5 @@ import android.app.Activity;
  * Modifier：
  * Modify time：
  */
-public class OrderDetailActivity extends Activity {
+public class OrderDetailActivity extends BaseActivity {
 }

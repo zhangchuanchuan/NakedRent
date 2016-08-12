@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--首页相关距离-->
+    <dimen name="main_tab_black">3dp</dimen>
+    <dimen name="main_tab_padding">20dp</dimen>
+    <dimen name="main_subscribe_size">48dp</dimen>
+
+    <dimen name="head_bar_height">45dp</dimen>
+    <dimen name="head_logo_margin_left">15dp</dimen>
+
+    <!--新闻item-->
+    <dimen name="item_margin_top">17dp</dimen>
+    <dimen name="item_margin_bottom">17dp</dimen>
+    <dimen name="img_margin_left">10dp</dimen>
+    <dimen name="img_margin_right">12dp</dimen>
+    <dimen name="item_margin_right">16dp</dimen>
+    <dimen name="digest_margin_top">4dp</dimen>
+    <dimen name="digest_text_line_space">4dp</dimen>
+    <dimen name="item_source_text_size">12dp</dimen>
+
+    <!--新闻详情-->
+    <dimen name="detail_bar_height">45dp</dimen>
+    <dimen name="arrow_height">20dp</dimen>
+
+    <dimen name="content_title_margin_top">16dp</dimen>
+    <dimen name="content_title_margin_bottom">0dp</dimen>
+    <dimen name="content_title_margin_left">16dp</dimen>
+    <dimen name="content_title_margin_right">16dp</dimen>
+
+    <!--新闻源+时间-->
+    <dimen name="content_source_margin_left">16dp</dimen>
+    <dimen name="content_source_margin_top">0dp</dimen>
+    <dimen name="content_source_margin_right">16dp</dimen>
+    <dimen name="content_source_margin_bottom">16dp</dimen>
+
+    <!--编辑-->
+    <dimen name="content_ec_margin_left">16dp</dimen>
+    <dimen name="content_ec_margin_top">0dp</dimen>
+    <dimen name="content_ec_margin_right">22dp</dimen>
+    <dimen name="content_ec_margin_bottom">16dp</dimen>
+
+    <dimen name="content_text_size">16dp</dimen>
+    <dimen name="content_text_margin_top">0dp</dimen>
+    <dimen name="content_text_margin_left">16dp</dimen>
+    <dimen name="content_text_margin_right">16dp</dimen>
+    <dimen name="content_text_marign_bottom">16dp</dimen>
+
+    <!--新闻图片-->
+    <dimen name="drawee_margin_left">0dp</dimen>
+    <dimen name="drawee_margin_top">0dp</dimen>
+    <dimen name="drawee_margin_right">0dp</dimen>
+    <dimen name="drawee_margin_bottom">0dp</dimen>
+
+    <!--今日热点-->
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="ic_back_height">20dp</dimen>
+</resources>

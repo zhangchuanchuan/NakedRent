@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/main_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_subscribe_size"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/icon_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="首页"
+                style="@style/text_white_28px"
+                android:background="@color/theme_color"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/main_tab_padding"
+                android:paddingRight="@dimen/main_tab_padding"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_subscribe_size"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/icon_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="订单"
+                style="@style/text_white_28px"
+                android:background="@color/theme_color"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/main_tab_padding"
+                android:paddingRight="@dimen/main_tab_padding"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_subscribe_size"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/icon_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="我的"
+                style="@style/text_white_28px"
+                android:background="@color/theme_color"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/main_tab_padding"
+                android:paddingRight="@dimen/main_tab_padding"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

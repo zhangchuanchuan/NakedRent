@@ -3,7 +3,7 @@ package com.stream.nakedrent.fragment;
 import android.app.Fragment;
 
 /**
- * description：
+ * description：管理三个tab的fragment
  * ===============================
  * creator：58
  * create time：2016/8/11 23:29
